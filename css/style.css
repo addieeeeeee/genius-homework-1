@@ -1,0 +1,141 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2"),
+    url("../fonts/play-v19-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2"),
+    url("../fonts/play-v19-latin-700.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v32-latin-regular.ttf") format("truetype");
+}
+:root {
+  --color-primary-white: rgba(255, 255, 255, 1);
+  --color-primary-blue: rgba(43, 127, 255, 1);
+  --color-primary-blue-dark: rgba(1, 28, 68, 1);
+  --color-secondary-gray-dark: rgba(74, 74, 74, 1);
+  --color-secondary-gray: rgba(116, 114, 114, 1);
+  --color-secondary-blue-dark: rgba(1, 31, 74, 1);
+  --color-secondary-yellow: rgba(1, 31, 74, 1);
+  --color-secondary-yellow-dark-article: rgba(0, 0, 0, 1);
+}
+
+/* Base */
+
+body {
+  color: var(--color-primary-blue-dark);
+}
+
+h1,
+h2 {
+  color: var(--color-primary-blue-dark);
+  font-family: "Play", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-title {
+  color: var(--color-primary-blue-dark);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+}
+
+/* header nav */
+.hero-nav {
+  color: var(--color-primary-blue-dark);
+  font-size: 18px;
+  letter-spacing: 1.1;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.hero-nav:hover {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
+}
+.link-hover-addres {
+  border: 2px solid var(--color-primary-white);
+}
+
+.subtitle {
+  color: var(--color-primary-blue-dark);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1.1;
+}
+
+/* section-1 */
+.hero-title {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 140px;
+  letter-spacing: 1.2;
+}
+
+.button-tell {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border-radius: 32px;
+  border: none;
+}
+
+.button-tell:hover {
+  color: var(--color-secondary-gray-dark);
+  background-color: transparent;
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-blue);
+}
+
+.subtitle-info {
+  color: var(--color-secondary-gray-dark);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.span-blue-color {
+  color: var(--color-primary-blue);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* section-2 */
+.about-beauty-zone {
+  font-size: 22px;
+  letter-spacing: 1.7;
+}
+
+.span-black-color {
+  color: var(--color-primary-blue-dark);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* section-3 */
+
+article > p {
+  color: var(--color-secondary-yellow-dark-article);
+  font-size: 18px;
+  font-weight: 400;
+}

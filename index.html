@@ -79,7 +79,11 @@
                             З нами краса назавжди!</p>
                     </div>
                     <div class="about-wrapper-face">
-                        <img src="./img/face.jpg" alt="різниця обличчя після косметологічних процедур">
+                        <img class="about-face" src="./img/face.jpg"
+                            alt="різниця обличчя після косметологічних процедур">
+                        <img class="about-star-black" src="./img/star-black.svg" alt="чорна зірка">
+                        <img class="about-star-small" src="./img/star-small.svg" alt="маленька зірка">
+                        <img class="about-star-blue" src="./img/star-blue.svg" alt="синя зірка">
                     </div>
                 </div>
             </div>
@@ -120,7 +124,11 @@
                         <h2 class="section-title">Наші <span class="span-blue-color">процедури</span></h2>
                     </div>
                     <div class="advantages-list-btn">
-                        <button class="button-arrow" type="button"></button>
+                        <button class="arrow" type="button">
+                            <svg class="icon icon-arrow" width="16" height="16">
+                                <use xlink:href="./img/newarow.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
                         <ul class="advantages-list">
                             <li><img class="advantages-list-item" src="./img/mask-img-left.jpg" alt="маска для обличчя">
                             </li>
@@ -128,6 +136,11 @@
                             <li><img class="advantages-list-item" src="./img/mask-img-right.jpg"
                                     alt="зволожуючі процедури"></li>
                         </ul>
+                        <button class="arrow next" type="button">
+                            <svg class="icon icon-arrow" width="16" height="16">
+                                <use xlink:href="./img/newarow.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -224,6 +237,43 @@
         </div>
     </footer>
 
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">Close</button>
+
+            <form name="modal-form" class="modal-form" autocomplete="on">
+                <h2 class="modal-title">Замовити дзвінок</h2>
+                <p class="modal-subtitle">Запишіться <span class="span-blue-color span-size">безкоштовно</span>
+                    та отримайте подарунок</p>
+
+                <div class="form-fied">
+                    <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                    <input class="form-input" type="text" id="user-name" name="user-name" required
+                        placeholder="Ваше ім'я та прізвище">
+                </div>
+
+
+                <div class="form-fied">
+                    <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                    <input class="form-input" type="tel" id="user-tel" name="user-tel" required
+                        placeholder="Ваш номер телефону">
+                </div>
+
+
+                <div class="form-fied">
+                    <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                    <input class="form-input" type="email" id="user-email" name="user-email" required
+                        placeholder="Ваша електронна пошта">
+                </div>
+                <button class="form-button button" type="submit">Записатись безкоштовно</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою
+                        конфіденційності</a></p>
+            </form>
+
+
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>

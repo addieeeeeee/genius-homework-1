@@ -1,0 +1,37 @@
+.form-input {
+  width: 100%;
+  padding: 18px 32px;
+  border-radius: 32px;
+  font-size: 13px;
+  border: 1px solid var(--color-secondary-gray);
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-secondary-gray-dark);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-primary-white);
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-secondary-gray);
+}
+
+.contact-form .span-blue-color {
+  font-size: 22px;
+}
+
+.form-field {
+  max-width: 310px;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}

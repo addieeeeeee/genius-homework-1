@@ -1,0 +1,79 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  position: relative;
+  margin-top: 96px;
+  padding-top: 56px;
+  background-image: url("../img/background-footer.pdf");
+  background-color: var(--color-primary-blue-dark);
+
+  &__wrapper {
+    display: flex;
+    gap: 56px;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 186px;
+    flex-basis: 50%;
+    justify-content: center;
+  }
+
+  &__nav {
+    text-decoration: none;
+    padding-bottom: 16px;
+  }
+
+  &__nav:hover {
+    color: var(--color-primary-blue);
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address-list {
+    flex-basis: 50%;
+    padding-bottom: 16px;
+  }
+
+  &__address-item {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__copy {
+    flex-basis: 50%;
+    padding-left: 80px;
+    color: var(--color-secondary-gray);
+    font-size: 16px;
+    line-height: 1.17;
+  }
+
+  &__copy-p {
+    padding-top: 16px;
+  }
+
+  &__copy-a {
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(..//img/footer-img.png);
+    background-repeat: no-repeat;
+    width: 248px;
+    height: 152px;
+  }
+}

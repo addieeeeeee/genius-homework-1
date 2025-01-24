@@ -1,0 +1,14 @@
+:root {
+  --color-primary-white: rgba(255, 255, 255, 1);
+  --color-primary-blue: rgba(43, 127, 255, 1);
+  --color-primary-blue-dark: rgba(1, 28, 68, 1);
+  --color-secondary-gray-dark: rgba(74, 74, 74, 1);
+  --color-secondary-gray: rgba(116, 114, 114, 1);
+  --color-secondary-blue-dark: rgba(1, 31, 74, 1);
+  --color-secondary-yellow: rgba(1, 31, 74, 1);
+  --color-secondary-yellow-dark-article: rgba(0, 0, 0, 1);
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

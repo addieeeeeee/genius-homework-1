@@ -1,0 +1,46 @@
+.about-section {
+  padding-top: 126px;
+
+  &__wrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    max-width: 529px;
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &__beauty-zone {
+    padding-top: 40px;
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  &__wrapper-face {
+    position: relative;
+    width: 499px;
+    height: 695px;
+    background: url(..//img/star-black.svg);
+  }
+
+  &__star-black {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+  }
+
+  &__star-small {
+    position: absolute;
+    top: 40%;
+    right: 0;
+  }
+
+  &__star-blue {
+    position: absolute;
+    top: 5%;
+    right: -5%;
+  }
+}

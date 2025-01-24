@@ -1,0 +1,36 @@
+.section-bg {
+  background-image: url("..//img/section-about-bg.jpg");
+  height: 586px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__section-why {
+    padding-left: 106px;
+    padding-top: 106px;
+  }
+  &__hero-title {
+    padding-top: 16px;
+    max-width: 529px;
+    color: var(--color-primary-blue);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 114px;
+  }
+
+  &__subtitle {
+    color: var(--color-primary-blue-dark);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  &__subtitle-info {
+    padding-top: 14px;
+    color: var(--color-secondary-gray-dark);
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 238px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}

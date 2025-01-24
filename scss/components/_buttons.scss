@@ -1,0 +1,58 @@
+.button {
+  margin-top: 40px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  border-radius: 32px;
+  border: none;
+  width: 219px;
+  height: 53px;
+  transition: 0.3s;
+  font-size: 18px;
+
+  &:hover {
+    color: var(--color-secondary-gray-dark);
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--color-primary-blue);
+    cursor: pointer;
+  }
+}
+
+.form-button {
+  display: block;
+  width: 280px;
+  height: 55px;
+  margin: 0 auto 8px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-blue-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-blue-dark);
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: var(--color-primary-blue);
+  fill: var(--color-primary-white);
+}
+
+.arrow.next {
+  transform: rotate(180deg);
+}
+
+// кнопка Close
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}

@@ -1,36 +1,28 @@
 .section-advantages {
   padding-top: 96px;
 
-  &__wrapper {
-    display: flex;
-    gap: 48px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  &__container {
+    overflow: hidden;
   }
 
   &__title {
     font-size: 64px;
     text-align: center;
+    padding-bottom: 48px;
   }
 
-  &__list-btn {
+  &__slider {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
-    gap: 16px;
+  &__wrapper-item {
+    width: 100%;
   }
 
-  // &__list-item {
-  //   transition: transform 0.3s;
-  // }
-
-  // &__list-item:hover {
-  //   transform: scale(1.05);
-  // }
+  &__list {
+    align-items: center;
+  }
 }

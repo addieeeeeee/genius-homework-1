@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>beauty zone</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 
@@ -129,37 +131,53 @@
         <section class="section-advantages" id="advantages">
             <div class="container">
                 <div class="section-advantages__wrapper">
-                    <div class="section-advantages__item">
-                        <h2 class="section-advantages__title">Наші <span class="span-blue-color">процедури</span></h2>
-                    </div>
-                    <div class="section-advantages__list-btn">
-                        <button class="arrow" type="button">
-                            <svg class="icon icon-arrow" width="16" height="16">
+                    <h2 class="section-advantages__title">Наші <span class="span-blue-color">процедури</span></h2>
+                    <div class="section-advantages__slider">
+                        <button class="arrow prev" type="button">
+                            <svg class="icon icon-arrow" width="44" height="16">
                                 <use xlink:href="./img/newarow.svg#icon-arrow"></use>
                             </svg>
                         </button>
-                        <ul class="section-advantages__list">
-                            <li><img class="section-advantages__list-item" src="./img/mask-img-left.jpg"
-                                    alt="маска для обличчя">
-                            </li>
-                            <li><img class="section-advantages__list-item" src="./img/mask-img-center.jpg"
-                                    alt="укол в лоб"></li>
-                            <li><img class="section-advantages__list-item" src="./img/mask-img-right.jpg"
-                                    alt="зволожуючі процедури"></li>
-                        </ul>
+                        <div class="section-advantages__wrapper-item">
+                            <div class="section-advantages__container swiper-container">
+                                <ul class="section-advantages__list swiper-wrapper">
+                                    <li class="swiper-slide"><img class="section-advantages__list-item"
+                                            src="./img/mask-img-left.jpg" alt="маска для обличчя">
+                                    </li>
+                                    <li class="swiper-slide"><img class="section-advantages__list-item"
+                                            src="./img/mask-img-center.jpg" alt="укол в лоб">
+                                    </li>
+                                    <li class="swiper-slide"><img class="section-advantages__list-item"
+                                            src="./img/mask-img-right.jpg" alt="зволожуючі процедури">
+                                    </li>
+                                    <li class="swiper-slide"><img class="section-advantages__list-item"
+                                            src="./img/mask-img-right.jpg" alt="зволожуючі процедури">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pagination">
+                                <span class="pagination__button"></span>
+                                <span class="pagination__button"></span>
+                                <span class="pagination__button"></span>
+                                <span class="pagination__button"></span>
+                            </div>
+                        </div>
                         <button class="arrow next" type="button">
-                            <svg class="icon icon-arrow" width="16" height="16">
+                            <svg class="icon icon-arrow" width="44" height="16">
                                 <use xlink:href="./img/newarow.svg#icon-arrow"></use>
                             </svg>
                         </button>
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
         <section class="contacts-section" id="contacts">
             <div class="container">
                 <h2 class="contacts-section__contact-title section-title">Як нас <span
-                        class="span-blue-color">знайти</span></h2>
+                        class="span-blue-color">знайти</span>
+                </h2>
                 <div class="contacts-section__contact-container">
                     <iframe class="contacts-section__contact-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1735256614261!5m2!1sru!2sua"
@@ -281,6 +299,10 @@
         </div>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

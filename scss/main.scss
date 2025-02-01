@@ -1,5 +1,9 @@
 @import "./base";
 
+@import "./utils/fonts";
+@import "./utils/utils";
+@import "./utils/variables";
+
 @import "./components/buttons";
 @import "./components/input";
 @import "./components/spanColor";
@@ -16,7 +20,3 @@
 @import "./layouts/section-bg";
 @import "./layouts/why-section";
 @import "./layouts/mobile-menu";
-
-@import "./utils/fonts";
-@import "./utils/utils";
-@import "./utils/variables";

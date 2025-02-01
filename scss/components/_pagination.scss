@@ -3,7 +3,22 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-top: 32px;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 32px;
+  }
+
+  &__mobile {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
 
   &__button {
     width: 12px;

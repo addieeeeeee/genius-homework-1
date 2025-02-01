@@ -6,8 +6,13 @@
 
 .span-blue-color {
   color: var(--color-primary-blue);
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
+
+  @media screen and (min-width: $bp-desktop) {
+    color: var(--color-primary-blue);
+    font-size: 64px;
+  }
 }
 
 .span-blue-color-s {

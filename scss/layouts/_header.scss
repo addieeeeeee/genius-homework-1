@@ -1,44 +1,90 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.25);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 
+  @media screen and (min-width: $bp-desktop) {
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   &__wrapper {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    position: relative;
+    padding: 16px 20px 25px 16px;
     display: flex;
+    justify-content: center;
     gap: 240px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      display: flex;
+      gap: 240px;
+    }
+
+    &__header-nav-link {
+      display: flex;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      display: flex;
+      gap: 240px;
+    }
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__nav-list {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
 
   &__hero-nav {
-    color: var(--color-primary-blue-dark);
-    font-size: 18px;
-    letter-spacing: 1.1;
-    font-weight: 400;
-    text-decoration: none;
+    @media screen and (min-width: $bp-desktop) {
+      color: var(--color-primary-blue-dark);
+      font-size: 18px;
+      letter-spacing: 1.1;
+      font-weight: 400;
+      text-decoration: none;
 
-    &:hover {
-      color: var(--color-primary-blue);
+      &:hover {
+        color: var(--color-primary-blue);
+      }
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
     }
   }
 
   &__address-list {
-    display: flex;
-    gap: 32px;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
   }
 }

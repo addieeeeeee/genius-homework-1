@@ -7,9 +7,30 @@
 }
 
 .icon-tell-footer {
+  width: 24px;
+  height: 24px;
   fill: var(--color-primary-white);
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 42px;
+    height: 42px;
+    fill: var(--color-primary-white);
+  }
 }
 
 .icon-tell-footer:hover {
   fill: var(--color-primary-blue);
+}
+
+.icon-menu {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary-blue-dark);
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
 }

@@ -1,21 +1,36 @@
 .section-advantages {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 96px;
+  }
 
   &__container {
     overflow: hidden;
   }
 
   &__title {
-    font-size: 64px;
+    font-size: 32px;
     text-align: center;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 64px;
+      text-align: center;
+      padding-bottom: 48px;
+    }
   }
 
   &__slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
   }
 
   &__wrapper-item {
@@ -24,5 +39,17 @@
 
   &__list {
     align-items: center;
+    @media screen and (min-width: $bp-desktop) {
+      align-items: center;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-desktop) {
+    }
   }
 }

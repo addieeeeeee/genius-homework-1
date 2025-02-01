@@ -2,27 +2,95 @@
   position: absolute;
   bottom: 0;
   position: relative;
-  margin-top: 96px;
-  padding-top: 56px;
+  padding-top: 32px;
   background-image: url("../img/background-footer.pdf");
   background-color: var(--color-primary-blue-dark);
+  padding-bottom: 66px;
+
+  @media screen and (min-width: $bp-desktop) {
+    position: absolute;
+    bottom: 0;
+    position: relative;
+    margin-top: 96px;
+    padding-top: 56px;
+    background-image: url("../img/background-footer.pdf");
+    background-color: var(--color-primary-blue-dark);
+    padding-bottom: 56px;
+  }
 
   &__wrapper {
     display: flex;
-    gap: 56px;
+    flex-direction: column;
+    gap: 30px;
     justify-content: space-between;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 186px;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
   }
 
   &__list {
     display: flex;
-    gap: 186px;
-    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 42px;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: relative;
+      display: flex;
+      gap: 42px;
+      flex-direction: column;
+      justify-content: top;
+      align-items: center;
+      flex-basis: 50%;
+    }
+  }
+
+  &__logo {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__nav {
     text-decoration: none;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__nav-list {
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+    }
+  }
+
+  &__nav-mobile-list {
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__nav:hover {
@@ -31,49 +99,93 @@
 
   &__address {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-basis: 50%;
+      flex-wrap: nowrap;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__address-list {
-    flex-basis: 50%;
-    padding-bottom: 16px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      flex-basis: 50%;
+      padding-bottom: 16px;
+    }
   }
 
   &__address-item {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 24px;
+    }
   }
 
   &__copy {
-    flex-basis: 50%;
-    padding-left: 80px;
     color: var(--color-secondary-gray);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.17;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-self: flex-start;
+      flex-basis: 50%;
+      padding-left: 72px;
+      color: var(--color-secondary-gray);
+      font-size: 16px;
+      line-height: 1.17;
+    }
   }
 
   &__copy-p {
-    padding-top: 16px;
+    padding-top: 0;
+    font-style: normal;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 16px;
+    }
   }
 
   &__copy-a {
-    cursor: pointer;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      cursor: pointer;
+    }
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url(..//img/footer-img.png);
-    background-repeat: no-repeat;
-    width: 248px;
-    height: 152px;
+    @media screen and (min-width: $bp-desktop) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url(..//img/footer-img.png);
+      background-repeat: no-repeat;
+      width: 248px;
+      height: 152px;
+    }
   }
 }

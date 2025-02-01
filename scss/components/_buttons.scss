@@ -1,13 +1,41 @@
 .button {
-  margin-top: 40px;
+  margin: 0 auto;
   color: var(--color-primary-white);
   background-color: var(--color-primary-blue);
   border-radius: 32px;
   border: none;
-  width: 219px;
-  height: 53px;
+  width: 186px;
+  height: 44px;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 16px;
+
+  &:hover {
+    color: var(--color-secondary-gray-dark);
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--color-primary-blue);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-top: 40px;
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-blue);
+    border-radius: 32px;
+    border: none;
+    width: 219px;
+    height: 53px;
+    transition: 0.3s;
+    font-size: 18px;
+
+    &:hover {
+      color: var(--color-secondary-gray-dark);
+      background-color: transparent;
+      border-radius: 32px;
+      border: 2px solid var(--color-primary-blue);
+      cursor: pointer;
+    }
+  }
 
   &:hover {
     color: var(--color-secondary-gray-dark);
@@ -20,9 +48,18 @@
 
 .form-button {
   display: block;
-  width: 280px;
-  height: 55px;
+  width: 240px;
+  height: 44px;
   margin: 0 auto 8px;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    width: 280px;
+    height: 55px;
+    margin: 0 auto 8px;
+    font-size: 18px;
+  }
 }
 
 .arrow {
@@ -45,8 +82,23 @@
   fill: var(--color-primary-white);
 }
 
+.arrow.prev {
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .arrow.next {
-  transform: rotate(180deg);
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    width: 44px;
+    height: 44px;
+    transform: rotate(180deg);
+  }
 }
 
 // кнопка Close

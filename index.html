@@ -15,9 +15,16 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <div class="header__wrapper__header-nav-link"><a href="./index.html"><img src="./img/logo.svg"
-                            alt="логотип косметологічної клініки"></a>
+                <div class="header__wrapper__header-nav-link">
+                    <a class="header__logo" href="./index.html">
+                        <img src="./img/logo.svg" alt="логотип косметологічної клініки"></a>
+                    <div class="header__button menu-btn-open">
+                        <svg class="icon icon-menu" width="32" height="32">
+                            <use xlink:href="./img/icons.svg#icon-menu"></use>
+                        </svg>
+                    </div>
                 </div>
+
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li><a class="header__hero-nav" href="#about ">Про нас</a></li>
@@ -159,7 +166,7 @@
                                 <span class="pagination__button"></span>
                                 <span class="pagination__button"></span>
                                 <span class="pagination__button"></span>
-                                <span class="pagination__button"></span>
+                                <span class="pagination__button pagination__mobile"></span>
                             </div>
                         </div>
                         <button class="arrow next" type="button">
@@ -168,7 +175,6 @@
                             </svg>
                         </button>
                     </div>
-
                 </div>
             </div>
             </div>
@@ -222,10 +228,13 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a class="footer__nav" href="#">Про нас</a></li>
-                            <li><a class="footer__nav" href="#">Чому ми</a></li>
-                            <li><a class="footer__nav" href="#">Наші процедури</a></li>
-                            <li><a class="footer__nav" href="#">Контакти</a></li>
+                            <li class="footer__nav-list"><a class="footer__nav" href="#">Про нас</a></li>
+                            <li class="footer__nav-list"><a class="footer__nav" href="#">Чому ми</a></li>
+                            <li class="footer__nav-list"><a class="footer__nav" href="#">Наші процедури</a></li>
+                            <li class="footer__nav-list"><a class="footer__nav" href="#">Контакти</a></li>
+                            <li class="footer__nav-list footer__nav-mobile-list"><a class="footer__nav"
+                                    href="#">Політика конфіденційності</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -268,7 +277,7 @@
     </footer>
 
 
-    <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
             <form name="modal-form" class="modal__form" autocomplete="on">
@@ -297,7 +306,7 @@
 
 
         </div>
-    </div>
+    </div> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

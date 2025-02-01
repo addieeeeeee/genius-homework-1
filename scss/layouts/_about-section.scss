@@ -1,46 +1,102 @@
 .about-section {
-  padding-top: 126px;
+  padding-top: 56px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 126px;
+  }
 
   &__wrapper {
-    display: flex;
-    gap: 32px;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__title {
-    max-width: 529px;
+    padding-bottom: 24px;
+    max-width: 288px;
+    font-size: 32px;
     font-weight: 700;
-    font-size: 64px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 529px;
+      font-weight: 700;
+      font-size: 64px;
+    }
   }
 
   &__beauty-zone {
-    padding-top: 40px;
+    padding-bottom: 8px;
+    padding-right: 80px;
     font-size: 22px;
     line-height: 1.7;
     font-weight: 400;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 732px;
+      padding-top: 40px;
+      font-size: 22px;
+      line-height: 1.7;
+      font-weight: 400;
+    }
   }
+
+  // ФОТО ІЗ ЗІРКАМИ
 
   &__wrapper-face {
     position: relative;
-    width: 499px;
-    height: 695px;
-    background: url(..//img/star-black.svg);
+    @media screen and (min-width: $bp-desktop) {
+      width: 499px;
+      height: 695px;
+      background: url(..//img/star-black.svg);
+    }
+  }
+
+  &__face {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      width: 499px;
+      height: 695px;
+      background: url(..//img/star-black.svg);
+    }
   }
 
   &__star-black {
     position: absolute;
-    top: 50%;
-    left: 26%;
+    top: 20px;
+    right: 5%;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      top: 50%;
+      left: 24%;
+    }
   }
 
   &__star-small {
-    position: absolute;
-    top: 40%;
-    right: 0;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      right: 0;
+    }
   }
 
   &__star-blue {
-    position: absolute;
-    top: 5%;
-    right: -5%;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: -5%;
+    }
   }
 }

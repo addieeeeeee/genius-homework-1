@@ -1,36 +1,83 @@
 .section-bg {
   background-image: url("..//img/section-about-bg.jpg");
-  height: 586px;
+  background-size: cover;
+  height: 350px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
+
+  @media screen and (min-width: $bp-desktop) {
+    background-image: url("..//img/section-about-bg.jpg");
+    height: 586px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   &__section-why {
-    padding-left: 106px;
-    padding-top: 106px;
+    padding-top: 115px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      padding-left: 106px;
+      padding-top: 106px;
+    }
   }
   &__hero-title {
-    padding-top: 16px;
-    max-width: 529px;
     color: var(--color-primary-blue);
     font-weight: 700;
-    font-size: 140px;
-    line-height: 114px;
+    font-size: 54px;
+    line-height: 46px;
+    text-align: center;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 16px;
+      max-width: 529px;
+      color: var(--color-primary-blue);
+      font-weight: 700;
+      font-size: 140px;
+      line-height: 114px;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: $bp-desktop) {
+    }
   }
 
   &__subtitle {
-    color: var(--color-primary-blue-dark);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.1;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      color: var(--color-primary-blue-dark);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.1;
+      text-align: left;
+    }
   }
 
   &__subtitle-info {
-    padding-top: 14px;
     color: var(--color-secondary-gray-dark);
     font-weight: 400;
-    font-size: 12px;
-    max-width: 238px;
+    font-size: 11px;
+    max-width: 186px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 14px;
+      color: var(--color-secondary-gray-dark);
+      font-weight: 400;
+      font-size: 12px;
+      max-width: 238px;
+      text-align: center;
+      line-height: 1.5;
+    }
   }
 }
